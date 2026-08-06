@@ -8,7 +8,7 @@ CERAM is a flight computer board for model rocketry, built around a simple idea:
 
 ## Why
 
-Making a rocket flight computer usually means picking one of two paths. Either you buy a commercial unit and spend a lot of money, or you design your own PCB with a bare microcontroller, an IMU, a barometer and a pile of passives, then try to hand solder QFN packages with a normal iron. That second path is a weekend of frustration, one spool of solder wick, and usually a dead board or two.
+Making a rocket flight computer usually means picking one of two paths. Either you buy a commercial unit and spend a lot of money, or you design your own PCB with a bare microcontroller, an IMU, a barometer and a pile of passives, then try to hand solder QFN packages with a normal iron. The second option likely results in failure.
 
 ## What is on it
 
@@ -43,6 +43,10 @@ CERAM is a carrier board. What goes on top of it defines its actual use.
 
 ## Software
 Included is a board test program (`firmware/BoardTest`) that initializes the IMU, barometer, and servos and streams all sensor readings over serial.
+Please use the build.sh command to build and flash (you may need to change ports).
+
+## PCB
+Completed gerbers can be found in `pcb/production/CERAM-V2.zip`.
 
 ## License
 
