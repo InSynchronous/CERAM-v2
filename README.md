@@ -30,7 +30,18 @@ CERAM is a carrier board. What goes on top of it defines its actual use.
 
 | Part | Link | Cost |
 |---|---|---|
-| tbd | tbd| tbd| 
+| Screw Terminals 5.08mm | <https://www.aliexpress.us/item/2251832621219818.html> | $1.96 |
+| Resistor Kit (not requesting) (1x 220ohm 2x 330ohm 3x 10k ohm) | <https://www.aliexpress.us/item/3256808562766775.html> | $3.17 |
+| IRLZ44N (not requesting)| <https://www.aliexpress.us/item/3256807934257560.html> | $2.30 |
+| LM317 | <https://www.aliexpress.us/item/3256803468041967.html> | $1.91 |
+| Header Pins | <https://www.aliexpress.us/item/3256807247428541.html> | $1.84 |
+| Seeed Studio Xiao ESP32-S3 (equal to or less than aliexpress pricing when including shipping charges) | <https://www.amazon.com/ESP32S3-2-4GHz-Dual-core-Supported-Efficiency-Interface/dp/B0BYSB66S5> | $16.99 |
+| BMP280 (aliexpress only has fake clones trust me) | <https://www.amazon.com/Atmospheric-Pressure-Modules-Barometric-Compatible/dp/B0FDWN2LVS/> | $6.62 |
+| MPU6050 | <https://www.aliexpress.us/item/3256809482368154.html> | $2.82 |
+| JLC PCB | (see CERAM-V2.zip in pcb/production) | $5.30 |
+| Total | . | $42.91 |
+
+Note: Aliexpress shipping and taxes not included. Depends highly on time of order and location of order. Requesting $12 dollars for buffer.
 
 ## Software
 Included is a board test program (`firmware/BoardTest`) that initializes the IMU, barometer, and servos and streams all sensor readings over serial.
