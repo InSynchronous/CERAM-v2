@@ -41,8 +41,6 @@ CERAM is a carrier board. What goes on top of it defines its actual use.
 | JLC PCB | (see CERAM-V2.zip in pcb/production) | $5.30 |
 | Total | . | $42.91 |
 
-Note: Aliexpress shipping and taxes not included. Depends highly on time of order and location of order. Requesting $12 dollars for buffer.
-
 ## Software
 Included is a board test program (`firmware/BoardTest`) that initializes the IMU, barometer, and servos and streams all sensor readings over serial.
 
