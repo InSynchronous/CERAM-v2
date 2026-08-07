@@ -46,7 +46,7 @@ Included is a board test program (`firmware/BoardTest`) that initializes the IMU
 Please use the build.sh command to build and flash (you may need to change ports).
 
 ## PCB
-Completed gerbers can be found in `pcb/production/CERAM-V2.zip`.
+Completed gerbers can be found in `pcb/production/CERAM-V2.zip` and `gerbers.zip`.
 
 ## License
 
