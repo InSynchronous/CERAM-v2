@@ -48,6 +48,13 @@ Please use the build.sh command to build and flash (you may need to change ports
 ## PCB
 Completed gerbers can be found in `pcb/production/CERAM-V2.zip` and `gerbers.zip`.
 
+### Schematic
+![Schematic](images/4.png)
+
+### PCB
+![PCB](images/3.png)
+
+
 ## License
 
 MIT. See LICENSE.
