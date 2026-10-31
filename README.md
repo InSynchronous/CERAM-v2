@@ -45,8 +45,29 @@ CERAM is a carrier board. What goes on top of it defines its actual use.
 Included is a board test program (`firmware/BoardTest`) that initializes the IMU, barometer, and servos and streams all sensor readings over serial.
 Please use the build.sh command to build and flash (you may need to change ports).
 
+## Software
+Included is a board test program (`firmware/BoardTest`) that initializes the IMU, barometer, and servos and streams all sensor readings over serial.
+
+### Uploading
+
+1. Install [arduino-cli](https://arduino.github.io/arduino-cli/latest/installation/) and the ESP32 board core
+2. Set `PORT` and `FQBN` at the top of `firmware/build.sh` to match your XIAO
+3. Run `./build.sh` - it compiles, flashes, and opens the serial monitor. `./serial.sh` opens just the monitor
+
+### What it outputs
+
+- On boot the IMU self-calibrates and prints its drift
+- Every 10ms it streams one line over serial: timestamp, accel (m/s2), gyro (deg/s), IMU temp, baro temp/pressure/altitude, attitude (roll/pitch/yaw), and servo commands
+- Servo commands are PID leveled, clamped to +/-30 of center, on GPIO 9 (inner) and GPIO 2 (outer)
+- The LED on GPIO 4 blinks every 500ms. If it stops, the loop is hung.
+
 ## PCB
 Completed gerbers can be found in `pcb/production/CERAM-V2.zip` and `gerbers.zip`.
+
+### Ordering the PCB
+Upload `pcb/production/CERAM-V2.zip` to your PCBA source of choice. I like JLCPCB and live in the West Coast of America.
+All the gerber layers and drill files are inside. Pick **2 layers, 1.6mm board**, 
+Check the outline, silkscreen, and drill with `images/3.png` for safety just in case something screws up. 
 
 ### Schematic
 ![Schematic](images/4.png)
