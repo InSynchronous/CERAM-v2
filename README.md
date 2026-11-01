@@ -76,6 +76,11 @@ Check the outline, silkscreen, and drill with `images/3.png` for safety just in 
 ![PCB](images/3.png)
 
 
-## License
+## Known Issues
+The Xiao seeed studio chip may have some difficulties mounting according to online reports. I've never had an issue with it myself, but note you may need to bend some pins.
 
+## Credits
+I used the Seeed Studio Fusion Open Parts Library (OPL)
+
+## License
 MIT. See LICENSE.
