@@ -38,8 +38,8 @@ CERAM is a carrier board. What goes on top of it defines its actual use.
 | Seeed Studio Xiao ESP32-S3 (equal to or less than aliexpress pricing when including shipping charges) | <https://www.amazon.com/ESP32S3-2-4GHz-Dual-core-Supported-Efficiency-Interface/dp/B0BYSB66S5> | $16.99 |
 | BMP280 (aliexpress only has fake clones trust me) | <https://www.amazon.com/Atmospheric-Pressure-Modules-Barometric-Compatible/dp/B0FDWN2LVS/> | $6.62 |
 | MPU6050 | <https://www.aliexpress.us/item/3256809482368154.html> | $2.82 |
-| JLC PCB | (see CERAM-V2.zip in pcb/production) | $5.30 |
-| Total | . | $42.91 |
+| JLC PCB | (see CERAM-V2.zip in pcb/production) | $11.75 |
+| Total | . | $49.36 |
 
 ## Software
 Included is a board test program (`firmware/BoardTest`) that initializes the IMU, barometer, and servos and streams all sensor readings over serial.
@@ -80,7 +80,7 @@ Check the outline, silkscreen, and drill with `images/3.png` for safety just in 
 The Xiao seeed studio chip may have some difficulties mounting according to online reports. I've never had an issue with it myself, but note you may need to bend some pins.
 
 ## Credits
-I used the Seeed Studio Fusion Open Parts Library (OPL)
+I used the ![Seeed Studio Fusion Open Parts Library \(OPL\)](https://github.com/Seeed-Studio/OPL_Kicad_Library)
 
 ## License
 MIT. See LICENSE.
